@@ -9,11 +9,15 @@ int main()
 int arr[]={1,2,3,4};
 int numberOfSubArray;
 int numberOfArray=sizeof(arr)/sizeof(arr[0]);
-for(int i=0;i<=3;i++){
- for(int j=0;j<=i;j++){
-     cout<<arr[j]<<" ";
+for(int i=0;i<numberOfArray;i++){
+ for(int j=i;j<numberOfArray;j++){
+     for(int k=i;k<=j;k++){
+        cout<<arr[k]<<" ";
+     }
+     cout<<endl;
     }
-cout<<endl;
+
 }
-    return 0;
+
 }
+
